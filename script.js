@@ -62,4 +62,13 @@ if (form) {
   });
 }
 
+// Lazy-load Spline viewer script if needed (for robustness on some browsers)
+const splineEl = document.getElementById('hero-spline');
+if (splineEl && !customElements.get('spline-viewer')) {
+  const script = document.createElement('script');
+  script.type = 'module';
+  script.src = 'https://unpkg.com/@splinetool/viewer@1.9.48/build/spline-viewer.js';
+  document.head.appendChild(script);
+}
+
 

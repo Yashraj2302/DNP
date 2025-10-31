@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- Spline viewer (lazy-loaded in script.js as well) -->
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.48/build/spline-viewer.js"></script>
   </head>
   <body>
     <header class="site-header">
@@ -32,6 +34,11 @@
 
     <main>
       <section class="hero section" id="hero">
+        <div class="hero-3d" aria-hidden="true">
+          <!-- Replace the URL below with the exported Spline scene URL if needed -->
+          <spline-viewer id="hero-spline" url="https://app.spline.design/community/file/355705e7-5f04-4051-93d5-5007f7034ada" loading="lazy"></spline-viewer>
+          <div class="hero-3d-overlay"></div>
+        </div>
         <div class="container hero-inner">
           <h1 class="hero-title">Dynamic New Production – Create. Innovate. Deliver.</h1>
           <p class="hero-subtitle">For story‑driven thinkers and visual dreamers—people who see the world through narratives and design. We value creativity, authenticity, and strategy to transform ideas into impactful visual stories.</p>
