@@ -1,8 +1,11 @@
 [build]
-  publish = "."
-  command = ""
+  publish = ".next"
+  command = "npm run build"
 
 [[headers]]
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
