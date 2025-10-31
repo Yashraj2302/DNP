@@ -1,23 +1,26 @@
 'use client';
 
+import { useState } from 'react';
 import Spline from '@splinetool/react-spline/next';
-import './globals.css';
 
 export default function Page() {
+  const [navOpen, setNavOpen] = useState(false);
+
   return (
     <>
       <header className="site-header">
         <div className="container header-inner">
           <a className="brand" href="#">Dynamic New Production</a>
-          <nav className="nav">
+          <nav className={`nav ${navOpen ? 'nav-open' : ''}`}>
             <a href="#about">About</a>
             <a href="#features">Services</a>
             <a href="#portfolio">Work</a>
             <a href="#process">Process</a>
             <a href="#testimonials">Testimonials</a>
             <a href="#faq">FAQ</a>
-            <a href="#contact" className="btn btn-primary">Let’s Talk</a>
+            <a href="#contact" className="btn btn-primary">Let's Talk</a>
           </nav>
+          <button className="nav-toggle" aria-label="Toggle menu" aria-expanded={navOpen} onClick={() => setNavOpen(!navOpen)}>☰</button>
         </div>
       </header>
 
