@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000">
+  <defs>
+    <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a1f"/>
+      <stop offset="100%" stop-color="#0f0f14"/>
+    </linearGradient>
+    <linearGradient id="a2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6C5CE7"/>
+      <stop offset="100%" stop-color="#4A3BD1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" fill="url(#g2)"/>
+  <rect x="220" y="220" width="1160" height="560" rx="24" fill="#0f0f12" stroke="#2a2a2f" stroke-width="4"/>
+  <rect x="260" y="300" width="520" height="80" rx="12" fill="#16161d"/>
+  <rect x="260" y="400" width="420" height="24" rx="8" fill="#20202a"/>
+  <rect x="260" y="440" width="460" height="24" rx="8" fill="#20202a"/>
+  <rect x="260" y="480" width="380" height="24" rx="8" fill="#20202a"/>
+  <rect x="260" y="560" width="200" height="52" rx="12" fill="#6C5CE7"/>
+  <rect x="820" y="300" width="520" height="380" rx="16" fill="#13131a" stroke="#2a2a2f"/>
+  <text x="840" y="520" fill="#b3b3b8" font-family="Inter, Arial" font-size="42">Placeholder — project image</text>
+  <circle cx="300" cy="220" r="120" fill="url(#a2)" opacity="0.22"/>
+  <circle cx="1350" cy="820" r="160" fill="url(#a2)" opacity="0.18"/>
+</svg>
+
+
